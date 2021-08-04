@@ -4,7 +4,7 @@ For this project, we will train a fully connected convolutional neural network t
 
 ## The Data
 
-This project uses a manually labeled dataset presented in a paper published by [Wang et al.](https://datasets.simula.no/depresjon/) in 2019. It contains 37000 images roughly equally distributed into ten classes, all acquired by the Sentinel-1 satellite in 2016: Pure Ocean Waves, Wind Streaks, Micro Convective Cells, Rain Cells, Biological Slicks, Sea Ice, Icebergs, Low Wind Area, Atmospheric Front, and Oceanic Front. Descriptions for each of the classes and in depth descriptions of the preprocessing techniques used to prepare the images for machine learning can be found in the source paper by following the link above. Below is a set of example images, containing one from each class, where letters (a)-(g) are respective to the list of categories provided above.
+This project uses a manually labeled dataset presented in a paper published by [Wang et al.](https://rmets.onlinelibrary.wiley.com/doi/full/10.1002/gdj3.73) in 2019. It contains 37000 images roughly equally distributed into ten classes, all acquired by the Sentinel-1 satellite in 2016: Pure Ocean Waves, Wind Streaks, Micro Convective Cells, Rain Cells, Biological Slicks, Sea Ice, Icebergs, Low Wind Area, Atmospheric Front, and Oceanic Front. Descriptions for each of the classes and in depth descriptions of the preprocessing techniques used to prepare the images for machine learning can be found in the source paper by following the link above. Below is a set of example images, containing one from each class, where letters (a)-(g) are respective to the list of categories provided above.
 
 <img src="Media/examples.png">
 
