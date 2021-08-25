@@ -21,7 +21,11 @@ In the end, two CNNs were independently trained, taking only a single night on a
 
 ## Areas for Improvement
 
-It is notable that both networks struggled in identifying certain phenomena: Ocean and Atmospheric Fronts. From the paper, "Periodic signatures of ocean waves can coexist with [both] Ocean Front [and] Atmospheric Front." Additionally, there is some class imbalance in the dataset. Ocean Fronts are least represented at about a quarter of the frequency of the other images. While there are two other categories that were underrepresented and performed fine, it is possible that a combination of imbalance and similarity to / presence of other classes in images primarily labeled with these categories caused this inaccuracy. In the future, augmenting the dataset with rotated or flipped images to relieve imbalance issues and artificially increase the number of training images could improve performance.
+It is notable that both networks struggled in identifying certain phenomena: Ocean and Atmospheric Fronts. From the paper, "Periodic signatures of ocean waves can coexist with [both] Ocean Front [and] Atmospheric Front." While we did see that these phenomena were sometimes misidentified as Pure Ocean Waves, they were very frequently misidentified as each other, and sometimes placed in opther categories as well. Below we have a heatmap of the classification matrix. The images true labels are on the left axis while the predicted label is on the bottom axis. A brighter square indicates that the true label on the left was classified as the label on the bottom.
+
+<img src="Media/class_matrix.png">
+
+Additionally, there is some class imbalance in the dataset. Ocean Fronts are least represented at about a quarter of the frequency of the other images. While there are two other categories that were underrepresented and performed well regardless, it is possible that a combination of data imbalance and similarity to / presence of other classes in images primarily labeled Fronts caused the relative inaccuracy of the two Front categories. In the future, augmenting the dataset with rotated or flipped images to relieve imbalance issues and artificially increase the number of training images could improve performance.
 
 ## Conclusions
 
